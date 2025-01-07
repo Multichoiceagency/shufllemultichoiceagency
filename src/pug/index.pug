@@ -1,0 +1,555 @@
+html(lang="en")
+    head
+        title Page title
+        meta(charset="utf-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
+        link(rel="preconnect", href="https://fonts.gstatic.com")
+        link(href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap", rel="stylesheet")
+        link(rel="stylesheet", href="css/tailwind/tailwind.min.css")
+        link(rel="icon", type="image/png", sizes="32x32", href="shuffle-for-tailwind.png")
+        script(src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js", defer="defer")
+    body(class="antialiased bg-body text-body font-body")
+        div(class="")
+            section(data-from-ai="true", x-data="{ mobileNavOpen: false, servicesOpen: false }", class="overflow-hidden")
+                div(class="bg-teal-900 justify-center h-28")
+                    nav(class="mx-4 py-6")
+                        div(class="container mx-auto px-4")
+                            div(class="relative flex items-center justify-between")
+                                a(href="#", class="inline-block")
+                                    img(class="h-20", src="images/Logo-wit-at-4x.png", alt="")
+                                ul(class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hidden md:flex z-50")
+                                    li(class="mr-4 lg:mr-8")
+                                        a(class="inline-block text-white hover:text-lime-500 font-medium", href="#") Cases
+                                    li(class="mr-4 lg:mr-8 relative group")
+                                        a(@mouseover="servicesOpen = true", @mouseleave="servicesOpen = false", class="inline-block text-white hover:text-lime-500 font-medium z-50", href="#") Diensten
+                                        div(x-show="servicesOpen", @mouseover="servicesOpen = true", @mouseleave="servicesOpen = false", class="left-0 mt-2 w-screen bg-white shadow-lg rounded-lg p-6 grid grid-cols-3 gap-8 absolute z-auto", style="width: 1000px; margin-left: -400px;")
+                                            div
+                                                h3(class="font-bold text-teal-900 mb-4") Design
+                                                ul
+                                                    li(class="mb-3")
+                                                        a(href="#", class="text-gray-600 hover:text-lime-500")
+                                                            div(class="font-medium") UI/UX Design
+                                                            div(class="text-sm") Creëer prototypes en wireframes voor interactieve en gebruiksvriendelijke ontwerpen.
+                                                    li(class="mb-3")
+                                                        a(href="#", class="text-gray-600 hover:text-lime-500")
+                                                            div(class="font-medium") Responsief Webdesign
+                                                            div(class="text-sm") Zorg voor een naadloze gebruikerservaring op desktop, tablet en mobiel.
+                                                    li(class="mb-3")
+                                                        a(href="#", class="text-gray-600 hover:text-lime-500")
+                                                            div(class="font-medium") Custom Webdesign
+                                                            div(class="text-sm") Ontwikkel maatwerkoplossingen die perfect passen bij jouw huisstijl.
+                                                    li
+                                                        a(href="#", class="text-gray-600 hover:text-lime-500")
+                                                            div(class="font-medium") Frontend Development
+                                                            div(class="text-sm") Bouw snelle en aantrekkelijke interfaces met moderne technologieën.
+                                            div
+                                                h3(class="font-bold text-teal-900 mb-4") Development
+                                                ul
+                                                    li(class="mb-3")
+                                                        a(href="#", class="text-gray-600 hover:text-lime-500") Backend Development
+                                                    li(class="mb-3")
+                                                        a(href="#", class="text-gray-600 hover:text-lime-500") E-commerce Platformontwikkeling
+                                                    li(class="mb-3")
+                                                        a(href="#", class="text-gray-600 hover:text-lime-500") Headless E-commerce
+                                                    li
+                                                        a(href="#", class="text-gray-600 hover:text-lime-500") Beveiliging
+                                            div
+                                                h3(class="font-bold text-teal-900 mb-4") Marketing
+                                                ul
+                                                    li(class="mb-3")
+                                                        a(href="#", class="text-gray-600 hover:text-lime-500") Logo Ontwerp & Visuele Identiteit
+                                                    li(class="mb-3")
+                                                        a(href="#", class="text-gray-600 hover:text-lime-500") Merkstrategie en Storytelling
+                                                    li(class="mb-3")
+                                                        a(href="#", class="text-gray-600 hover:text-lime-500") Technische SEO
+                                                    li(class="mb-3")
+                                                        a(href="#", class="text-gray-600 hover:text-lime-500") Digitale Marketingcampagnes
+                                                    li
+                                                        a(href="#", class="text-gray-600 hover:text-lime-500") Hosting en Domeinbeheer
+                                    li(class="mr-4 lg:mr-8")
+                                        a(class="inline-block text-white hover:text-lime-500 font-medium", href="#") Development
+                                    li(class="mr-4 lg:mr-8")
+                                        a(class="inline-block text-white hover:text-lime-500 font-medium", href="#") Portalen
+                                    li(class="mr-4 lg:mr-8")
+                                        a(class="inline-block text-white hover:text-lime-500 font-medium", href="#") Industrieën
+                                    li
+                                        a(class="inline-block text-white hover:text-lime-500 font-medium", href="#") Contact
+            section(x-data="{ mobileNavOpen: false }")
+                div(class="relative pt-18 z-10")
+                    img(class="hidden md:block absolute top-0 left-0 mt-28 w-32 lg:w-64 xl:w-auto", src="flow-assets/headers/header-4-left-top.png", alt="")
+                    img(class="hidden md:block absolute top-0 right-0 mt-20 w-32 lg:w-64 xl:w-auto", src="flow-assets/headers/header-4-right-top.png", alt="")
+                    div(class="container mx-auto px-4 relative")
+                        div(class="max-w-lg xl:max-w-xl mx-auto mb-12 lg:mb-0 text-center")
+                            div(class="flex mb-6 items-center justify-center")
+                                svg(width="12", height="12", viewbox="0 0 12 12", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                    rect(width="12", height="12", rx="2", fill="#022C22")
+                                    circle(cx="6", cy="6", r="4", fill="#BEF264")
+                                span(class="ml-2 text-sm font-medium") Powering Tomorrow
+                            h1(class="font-heading text-5xl xs:text-7xl xl:text-8xl tracking-tight mb-8") Future Webdesign & Development
+                            p(class="text-lg text-gray-700 mb-10") Unleash the potential of tomorrow with Multichoiceagency: revolutionizing Dutch web design and development.
+                            div(class="flex flex-col sm:flex-row justify-center")
+                                a(href="#", class="inline-flex py-4 px-6 mb-3 sm:mb-0 sm:mr-4 items-center justify-center text-lg font-medium text-white hover:text-teal-900 border border-teal-900 hover:border-lime-500 bg-teal-900 hover:bg-lime-500 rounded-full transition duration-200") See our solutions
+                                |                               
+                                a(href="#", class="inline-flex py-4 px-6 items-center justify-center text-lg font-medium text-black hover:text-white border border-teal-900 hover:bg-teal-900 rounded-full transition duration-200") Get in touch
+                        div(class="flex -mx-4 items-end relative")
+                            div(class="w-1/3 xs:w-1/2 lg:w-auto px-4")
+                                img(class="block h-32 lg:h-48", src="flow-assets/headers/header-4-bottom-lleft.png", alt="")
+                            div(class="w-2/3 xs:w-1/2 lg:w-auto ml-auto px-4")
+                                img(class="block w-1/2 md:w-64 lg:w-auto ml-auto", src="flow-assets/headers/header-4-bottom-right.png", alt="")
+                            div(class="absolute bottom-0 left-0 w-full py-32 bg-gradient-to-t from-white to-transparent")
+                div(:class="{'block': mobileNavOpen, 'hidden': !mobileNavOpen}", class="hidden fixed top-0 left-0 bottom-0 w-full xs:w-5/6 xs:max-w-md z-50")
+                    div(x-on:click="mobileNavOpen = !mobileNavOpen", class="fixed inset-0 bg-violet-900 opacity-20")
+                    nav(class="relative flex flex-col py-7 px-10 w-full h-full bg-white overflow-y-auto")
+                        div(class="flex items-center justify-between")
+                            a(href="#", class="inline-block")
+                                img(class="h-8", src="flow-assets/logos/sign-logo-flow.svg", alt="")
+                            div(class="flex items-center")
+                                a(href="#", class="inline-flex py-2.5 px-4 mr-6 items-center justify-center text-sm font-medium text-teal-900 hover:text-white border border-teal-900 hover:bg-teal-900 rounded-full transition duration-200") Login
+                                button(x-on:click="mobileNavOpen = !mobileNavOpen")
+                                    svg(width="32", height="32", viewbox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                        path(d="M23.2 8.79999L8.80005 23.2M8.80005 8.79999L23.2 23.2", stroke="#1D1F1E", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round")
+                        div(class="pt-20 pb-12 mb-auto")
+                            ul(class="flex-col")
+                                li(class="mb-6")
+                                    a(class="inline-block text-teal-900 hover:text-teal-700 font-medium", href="#") About us
+                                li(class="mb-6")
+                                    a(class="inline-block text-teal-900 hover:text-teal-700 font-medium", href="#") Team
+                                li(class="mb-6")
+                                    a(class="inline-block text-teal-900 hover:text-teal-700 font-medium", href="#") Solutions
+                                li
+                                    a(class="inline-block text-teal-900 hover:text-teal-700 font-medium", href="#") Blog
+                        div(class="flex items-center justify-between")
+                            a(href="#", class="inline-flex items-center text-lg font-medium text-teal-900")
+                                span
+                                    svg(width="32", height="32", viewbox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                        path(d="M6.4 6.39999H25.6C26.92 6.39999 28 7.47999 28 8.79999V23.2C28 24.52 26.92 25.6 25.6 25.6H6.4C5.08 25.6 4 24.52 4 23.2V8.79999C4 7.47999 5.08 6.39999 6.4 6.39999Z", stroke="#646A69", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round")
+                                        path(d="M28 8.8L16 17.2L4 8.8", stroke="#646A69", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round")
+                                |                               
+                                span(class="ml-2") Newsletter
+                            div(class="flex items-center")
+                                a(href="#", class="inline-block mr-4")
+                                    svg(width="20", height="20", viewbox="0 0 20 20", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                        g(clip-path="url(#clip0_282_7847)")
+                                            path(d="M11.548 19.9999V10.8776H14.6087L15.0679 7.32146H11.548V5.05136C11.548 4.02209 11.8326 3.32066 13.3103 3.32066L15.1918 3.31988V0.139123C14.8664 0.0968385 13.7495 -0.000106812 12.4495 -0.000106812C9.73488 -0.000106812 7.87642 1.65686 7.87642 4.69916V7.32146H4.8064V10.8776H7.87642V19.9999H11.548Z", fill="#022C22")
+                                |                               
+                                a(href="#", class="inline-block mr-4")
+                                    svg(width="24", height="24", viewbox="0 0 24 24", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                        path(d="M7.8 2H16.2C19.4 2 22 4.6 22 7.8V16.2C22 17.7383 21.3889 19.2135 20.3012 20.3012C19.2135 21.3889 17.7383 22 16.2 22H7.8C4.6 22 2 19.4 2 16.2V7.8C2 6.26174 2.61107 4.78649 3.69878 3.69878C4.78649 2.61107 6.26174 2 7.8 2ZM7.6 4C6.64522 4 5.72955 4.37928 5.05442 5.05442C4.37928 5.72955 4 6.64522 4 7.6V16.4C4 18.39 5.61 20 7.6 20H16.4C17.3548 20 18.2705 19.6207 18.9456 18.9456C19.6207 18.2705 20 17.3548 20 16.4V7.6C20 5.61 18.39 4 16.4 4H7.6ZM17.25 5.5C17.5815 5.5 17.8995 5.6317 18.1339 5.86612C18.3683 6.10054 18.5 6.41848 18.5 6.75C18.5 7.08152 18.3683 7.39946 18.1339 7.63388C17.8995 7.8683 17.5815 8 17.25 8C16.9185 8 16.6005 7.8683 16.3661 7.63388C16.1317 7.39946 16 7.08152 16 6.75C16 6.41848 16.1317 6.10054 16.3661 5.86612C16.6005 5.6317 16.9185 5.5 17.25 5.5ZM12 7C13.3261 7 14.5979 7.52678 15.5355 8.46447C16.4732 9.40215 17 10.6739 17 12C17 13.3261 16.4732 14.5979 15.5355 15.5355C14.5979 16.4732 13.3261 17 12 17C10.6739 17 9.40215 16.4732 8.46447 15.5355C7.52678 14.5979 7 13.3261 7 12C7 10.6739 7.52678 9.40215 8.46447 8.46447C9.40215 7.52678 10.6739 7 12 7ZM12 9C11.2044 9 10.4413 9.31607 9.87868 9.87868C9.31607 10.4413 9 11.2044 9 12C9 12.7956 9.31607 13.5587 9.87868 14.1213C10.4413 14.6839 11.2044 15 12 15C12.7956 15 13.5587 14.6839 14.1213 14.1213C14.6839 13.5587 15 12.7956 15 12C15 11.2044 14.6839 10.4413 14.1213 9.87868C13.5587 9.31607 12.7956 9 12 9Z", fill="currentColor")
+                                |                               
+                                a(href="#", class="inline-block")
+                                    svg(width="24", height="24", viewbox="0 0 24 24", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                        path(d="M19 3C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19ZM18.5 18.5V13.2C18.5 12.3354 18.1565 11.5062 17.5452 10.8948C16.9338 10.2835 16.1046 9.94 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17C14.6813 12.17 15.0374 12.3175 15.2999 12.5801C15.5625 12.8426 15.71 13.1987 15.71 13.57V18.5H18.5ZM6.88 8.56C7.32556 8.56 7.75288 8.383 8.06794 8.06794C8.383 7.75288 8.56 7.32556 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19C6.43178 5.19 6.00193 5.36805 5.68499 5.68499C5.36805 6.00193 5.19 6.43178 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56ZM8.27 18.5V10.13H5.5V18.5H8.27Z", fill="currentColor")
+            section(class="p-4 bg-white")
+                div(class="pt-16 pb-24 px-5 xs:px-8 xl:px-12 bg-teal-900 rounded-3xl")
+                    div(class="container mx-auto px-4")
+                        div(class="flex mb-4 items-center")
+                            svg(width="8", height="8", viewbox="0 0 8 8", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                circle(cx="4", cy="4", r="4", fill="#BEF264")
+                            span(class="inline-block ml-2 text-sm font-medium text-white") Onze oplossingen
+                        div(class="border-t border-white border-opacity-25 pt-14")
+                            h1(class="font-heading text-4xl sm:text-6xl text-white mb-24") Full Service Digital Agency
+                            div(class="flex flex-wrap -mx-4")
+                                div(class="w-full sm:w-1/2 lg:w-1/4 px-4 mb-12 lg:mb-0")
+                                    div(class="flex flex-col h-full")
+                                        svg(width="48", height="48", viewbox="0 0 48 48", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                            path(d="M0 8C0 3.58172 3.58172 0 8 0H40C44.4183 0 48 3.58172 48 8V40C48 44.4183 44.4183 48 40 48H8C3.58172 48 0 44.4183 0 40V8Z", fill="#BEF264")
+                                            circle(cx="16", cy="16", r="4", fill="#022C22")
+                                            circle(cx="24", cy="32", r="4", fill="#022C22")
+                                            circle(cx="32", cy="16", r="4", fill="#022C22")
+                                        h5(class="text-2xl font-medium text-white mt-6 mb-3") EV charging 
+                                        p(class="text-white opacity-80 mb-6") EVs use electricity as a power source, which can be generated from renewable energy sources. Our solutions help reducing greenhouse gas emissions in the transportation sector.
+                                        a(href="#", class="inline-block mt-auto text-lg font-medium text-white hover:text-lime-500") Read more
+                                div(class="w-full sm:w-1/2 lg:w-1/4 px-4 mb-12 lg:mb-0")
+                                    div(class="flex flex-col h-full")
+                                        svg(width="48", height="48", viewbox="0 0 48 48", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                            path(d="M0 8C0 3.58172 3.58172 0 8 0H40C44.4183 0 48 3.58172 48 8V40C48 44.4183 44.4183 48 40 48H8C3.58172 48 0 44.4183 0 40V8Z", fill="#BEF264")
+                                            rect(x="23", y="8", width="2", height="12", rx="1", fill="#022C22")
+                                            rect(x="23", y="28", width="2", height="12", rx="1", fill="#022C22")
+                                            rect(x="34.6066", y="11.9792", width="2", height="12", rx="1", transform="rotate(45 34.6066 11.9792)", fill="#022C22")
+                                            rect(x="20.4645", y="26.1213", width="2", height="12", rx="1", transform="rotate(45 20.4645 26.1213)", fill="#022C22")
+                                            rect(x="28", y="25", width="2", height="12", rx="1", transform="rotate(-90 28 25)", fill="#022C22")
+                                            rect(x="8", y="25", width="2", height="12", rx="1", transform="rotate(-90 8 25)", fill="#022C22")
+                                            rect(x="26.1213", y="27.5356", width="2", height="12", rx="1", transform="rotate(-45 26.1213 27.5356)", fill="#022C22")
+                                            rect(x="11.9792", y="13.3936", width="2", height="12", rx="1", transform="rotate(-45 11.9792 13.3936)", fill="#022C22")
+                                        h5(class="text-2xl font-medium text-white mt-6 mb-3") Solar Energy
+                                        p(class="text-white opacity-80 mb-6") Solar panels convert sunlight into electricity. Photovoltaic (PV) cells on these panels capture the energy from the sun and convert it into electrical power.
+                                        a(href="#", class="inline-block mt-auto text-lg font-medium text-white hover:text-lime-500") Read more
+                                div(class="w-full sm:w-1/2 lg:w-1/4 px-4 mb-12 sm:mb-0")
+                                    div(class="flex flex-col h-full")
+                                        svg(width="48", height="48", viewbox="0 0 48 48", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                            path(d="M0 8C0 3.58172 3.58172 0 8 0H40C44.4183 0 48 3.58172 48 8V40C48 44.4183 44.4183 48 40 48H8C3.58172 48 0 44.4183 0 40V8Z", fill="#BEF264")
+                                            path(d="M25 24C25 24.5523 24.5523 25 24 25C23.4477 25 23 24.5523 23 24C23 23.4477 23.4477 23 24 23C24.5523 23 25 23.4477 25 24Z", fill="#022C22")
+                                            path(fill-rule="evenodd", clip-rule="evenodd", d="M24 25C24.5523 25 25 24.5523 25 24C25 23.4477 24.5523 23 24 23C23.4477 23 23 23.4477 23 24C23 24.5523 23.4477 25 24 25Z", fill="#022C22")
+                                            path(fill-rule="evenodd", clip-rule="evenodd", d="M40 23C40.5523 23 41 23.4477 41 24C41 33.3888 33.3888 41 24 41C23.4477 41 23 40.5523 23 40C23 39.4477 23.4477 39 24 39C32.2843 39 39 32.2843 39 24C39 23.4477 39.4477 23 40 23Z", fill="#022C22")
+                                            path(fill-rule="evenodd", clip-rule="evenodd", d="M24 9C15.7157 9 9 15.7157 9 24C9 24.5523 8.55228 25 8 25C7.44772 25 7 24.5523 7 24C7 14.6112 14.6112 7 24 7C24.5523 7 25 7.44772 25 8C25 8.55228 24.5523 9 24 9Z", fill="#022C22")
+                                            path(fill-rule="evenodd", clip-rule="evenodd", d="M36 23C36.5523 23 37 23.4477 37 24C37 31.1797 31.1797 37 24 37C23.4477 37 23 36.5523 23 36C23 35.4477 23.4477 35 24 35C30.0751 35 35 30.0751 35 24C35 23.4477 35.4477 23 36 23Z", fill="#022C22")
+                                            path(fill-rule="evenodd", clip-rule="evenodd", d="M24 13C17.9249 13 13 17.9249 13 24C13 24.5523 12.5523 25 12 25C11.4477 25 11 24.5523 11 24C11 16.8203 16.8203 11 24 11C24.5523 11 25 11.4477 25 12C25 12.5523 24.5523 13 24 13Z", fill="#022C22")
+                                            path(fill-rule="evenodd", clip-rule="evenodd", d="M32 23C32.5523 23 33 23.4477 33 24C33 28.9706 28.9706 33 24 33C23.4477 33 23 32.5523 23 32C23 31.4477 23.4477 31 24 31C27.866 31 31 27.866 31 24C31 23.4477 31.4477 23 32 23Z", fill="#022C22")
+                                            path(fill-rule="evenodd", clip-rule="evenodd", d="M24 17C20.134 17 17 20.134 17 24C17 24.5523 16.5523 25 16 25C15.4477 25 15 24.5523 15 24C15 19.0294 19.0294 15 24 15C24.5523 15 25 15.4477 25 16C25 16.5523 24.5523 17 24 17Z", fill="#022C22")
+                                        h5(class="text-2xl font-medium text-white mt-6 mb-3") Wind Energy
+                                        p(class="text-white opacity-80 mb-6") Wind turbines harness the kinetic energy of the wind to generate electricity. Wind farms with multiple turbines are commonly used to produce large amounts of clean energy.
+                                        a(href="#", class="inline-block mt-auto text-lg font-medium text-white hover:text-lime-500") Read more
+                                div(class="w-full sm:w-1/2 lg:w-1/4 px-4")
+                                    div(class="flex flex-col h-full")
+                                        svg(width="48", height="48", viewbox="0 0 48 48", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                            path(d="M0 8C0 3.58172 3.58172 0 8 0H40C44.4183 0 48 3.58172 48 8V40C48 44.4183 44.4183 48 40 48H8C3.58172 48 0 44.4183 0 40V8Z", fill="#BEF264")
+                                            path(d="M23.8425 12.3779C23.9008 12.238 24.0992 12.238 24.1575 12.3779L30.1538 26.7692C31.9835 31.1605 28.7572 36 24 36Lnan nanL24 36C19.2428 36 16.0165 31.1605 17.8462 26.7692L23.8425 12.3779Z", fill="#022C22")
+                                        h5(class="text-2xl font-medium text-white mt-6 mb-3") Hydropower
+                                        p(class="text-white opacity-80 mb-6") This technology uses the energy from flowing water, such as rivers and dams, to turn turbines and generate electricity. It's one of the oldest forms of renewable energy.
+                                        a(href="#", class="inline-block mt-auto text-lg font-medium text-white hover:text-lime-500") Read more
+            section(class="py-12 lg:py-24")
+                div(class="container mx-auto px-4")
+                    div(class="flex flex-wrap -mx-4 mb-24")
+                        div(class="w-full md:w-1/2 px-4 mb-6 md:mb-0")
+                            div
+                                h1(class="font-heading text-6xl") Over ons
+                        div(class="w-full md:w-1/2 px-4")
+                            div(class="lg:max-w-lg md:ml-auto")
+                                p(class="text-xl font-medium mb-10") At Flow, we're committed to a sustainable future. As a pioneering force in the green energy sector, we've been at the forefront of the transition to clean, renewable power sources. Our mission is simple yet profound: to create a world where energy is not only abundant but also environmentally responsible. We believe that by harnessing the power of nature, we can power the world and protect it simultaneously.
+                                a(href="#", class="inline-flex py-4 px-6 items-center justify-center text-lg font-medium text-teal-900 hover:text-lime-500 border border-lime-500 hover:border-teal-900 bg-lime-500 hover:bg-teal-900 rounded-full transition duration-300") Read more
+                div(class="flex overflow-x-hidden")
+                    div(class="w-1/3 lg:w-1/5 -ml-32 flex-shrink-0 px-2 md:px-4")
+                        img(class="block w-full h-full object-cover rounded-3xl", src="flow-assets/about/about-image1.png", alt="")
+                    div(class="w-1/3 lg:w-1/5 flex-shrink-0 px-2 md:px-4")
+                        img(class="block w-full h-full object-cover rounded-3xl", src="flow-assets/about/about-image2.png", alt="")
+                    div(class="w-1/3 lg:w-1/5 flex-shrink-0 px-2 md:px-4")
+                        img(class="block w-full h-full object-cover rounded-2xl", src="flow-assets/about/about-image3.png", alt="")
+                    div(class="w-1/3 lg:w-1/5 flex-shrink-0 px-2 md:px-4")
+                        img(class="block w-full h-full object-cover rounded-2xl", src="flow-assets/about/about-image4.png", alt="")
+                    div(class="w-1/3 lg:w-1/5 flex-shrink-0 px-2 md:px-4")
+                        img(class="block w-full h-full object-cover rounded-2xl", src="flow-assets/about/about-image5.png", alt="")
+                    div(class="w-1/3 lg:w-1/5 flex-shrink-0 px-2 md:px-4")
+                        img(class="block w-full h-full object-cover rounded-2xl", src="flow-assets/about/about-image1.png", alt="")
+                    div(class="w-1/3 lg:w-1/5 flex-shrink-0 px-2 md:px-4")
+                        img(class="block w-full h-full object-cover rounded-2xl", src="flow-assets/about/about-image2.png", alt="")
+            div(class="container mx-auto")
+                section(class="py-12 md:py-24 bg-coolGray-50", x-data="{ tab: '' }", x-init="tab = $refs.tab1.textContent")
+                    div(class="container mx-auto px-4")
+                        div(class="max-w-lg mx-auto lg:max-w-none mb-20")
+                            div(class="flex flex-wrap -mx-4 items-end")
+                                div(class="w-full 2xl:w-7/12 px-4 mb-16 2xl:mb-0")
+                                    div(class="inline-flex mx-auto items-start")
+                                        h1(class="font-heading text-3xl xs:text-5xl md:text-6xl lg:text-4xl tracking-tighter pt-4") Onze Cases
+                                        span(class="block -mb-4 mr-12 lg:mr-8 text-right text-xl sm:text-2xl text-coolGray-600") (21)
+                                div(class="w-full 2xl:w-5/12 px-4")
+                                    ul(class="flex flex-wrap -mb-2 items-center justify-end")
+                                        li(class="mb-2 mr-2 sm:mr-8")
+                                            a(x-ref="tab1", x-on:click.prevent="tab = $refs.tab1.textContent", :class="{'bg-black text-white': $refs.tab1.textContent == tab, 'hover:bg-black hover:text-white': $refs.tab1.textContent != tab}", class="inline-block py-2.5 px-5 text-lg leading-none bg-black text-white rounded-full transition duration-100", href="#") All
+                                        li(class="mb-2 mr-2 sm:mr-8")
+                                            a(x-ref="tab2", x-on:click.prevent="tab = $refs.tab2.textContent", :class="{'bg-black text-white': $refs.tab2.textContent == tab }", class="inline-block py-2.5 px-5 text-lg hover:text-white leading-none hover:bg-black rounded-full transition duration-100", href="#") Villa
+                                        li(class="mb-2 mr-2 sm:mr-8")
+                                            a(x-ref="tab3", x-on:click.prevent="tab = $refs.tab3.textContent", :class="{'bg-black text-white': $refs.tab3.textContent == tab }", class="inline-block py-2.5 px-5 text-lg hover:text-white leading-none hover:bg-black rounded-full transition duration-100", href="#") Residance
+                                        li(class="mb-2")
+                                            a(x-ref="tab4", x-on:click.prevent="tab = $refs.tab4.textContent", :class="{'bg-black text-white': $refs.tab4.textContent == tab }", class="inline-block py-2.5 px-5 text-lg hover:text-white leading-none hover:bg-black rounded-full transition duration-100", href="#") Apartaments
+                        div(class="md:max-w-xl mx-auto lg:max-w-none")
+                            div(class="flex flex-wrap -mx-3 mb-20")
+                                div(:class="{'block': $refs.tab1.textContent == tab || $refs.tab2.textContent == tab, 'hidden': $refs.tab1.textContent != tab && $refs.tab2.textContent != tab}", class="w-full lg:w-7/12 px-3 mb-20 lg:mb-0")
+                                    a(class="group block", href="#")
+                                        div(class="relative h-112 md:h-200 mb-8 rounded-5xl overflow-hidden")
+                                            div(class="absolute left-0 top-0 h-full w-full group-hover:bg-opacity-10 group-hover:bg-black transition duration-200")
+                                            img(class="block w-full h-full object-cover", src="asitrastudio-assets/projects/photo-square3.png", alt="")
+                                        div(class="max-w-xs lg:max-w-md")
+                                            span(class="inline-block mb-3 py-2 px-3 text-sm leading-none border-1.5 border-black group-hover:bg-black group-hover:text-white rounded-full transition duration-200") Apartament
+                                            h3(class="text-4xl mb-6 tracking-tight leading-none") Althhorpe Street Leamigton Spa
+                                            span(class="block text-coolGray-600") Girona, Spain
+                                div(:class="{'block': $refs.tab1.textContent == tab || $refs.tab3.textContent == tab, 'hidden': $refs.tab1.textContent != tab && $refs.tab3.textContent != tab}", class="w-full lg:w-5/12 px-3")
+                                    a(class="group block", href="#")
+                                        div(class="relative h-112 md:h-135 mb-8 rounded-5xl overflow-hidden")
+                                            div(class="absolute left-0 top-0 h-full w-full group-hover:bg-opacity-10 group-hover:bg-black transition duration-200")
+                                            img(class="block w-full h-full object-cover", src="asitrastudio-assets/projects/photo-view5.png", alt="")
+                                        div(class="max-w-xs lg:max-w-md")
+                                            span(class="inline-block mb-3 py-2 px-3 text-sm leading-none border-1.5 border-black group-hover:bg-black group-hover:text-white rounded-full transition duration-200") Apartament
+                                            h3(class="text-4xl mb-6 tracking-tight leading-none") Althhorpe Street Leamigton Spa
+                                            span(class="block text-coolGray-600") Girona, Spain
+                            div(class="mb-20")
+                                div(class="flex flex-wrap -mx-3")
+                                    div(class="w-full lg:w-1/3 px-3 mb-20 lg:mb-0")
+                                        a(class="group block", href="#")
+                                            div(class="relative h-96 md:h-112 mb-8 rounded-5xl overflow-hidden")
+                                                div(class="absolute left-0 top-0 h-full w-full group-hover:bg-opacity-10 group-hover:bg-black transition duration-200")
+                                                img(class="block w-full h-full object-cover", src="asitrastudio-assets/projects/photo-square2.png", alt="")
+                                            div(class="max-w-xs")
+                                                span(class="inline-block mb-3 py-2 px-3 text-sm leading-none border-1.5 border-black group-hover:bg-black group-hover:text-white rounded-full transition duration-200") Apartament
+                                                h3(class="text-3xl mb-6 tracking-tight leading-none") Althhorpe Street Leamigton Spa
+                                                span(class="block text-coolGray-600") Girona, Spain
+                                    div(class="w-full lg:w-1/3 px-3 mb-20 lg:mb-0")
+                                        a(class="group block", href="#")
+                                            div(class="relative h-112 md:h-135 mb-8 rounded-5xl overflow-hidden")
+                                                div(class="absolute left-0 top-0 h-full w-full group-hover:bg-opacity-10 group-hover:bg-black transition duration-200")
+                                                img(class="block w-full h-full object-cover", src="asitrastudio-assets/projects/photo-view3.png", alt="")
+                                            div(class="max-w-xs")
+                                                span(class="inline-block mb-3 py-2 px-3 text-sm leading-none border-1.5 border-black group-hover:bg-black group-hover:text-white rounded-full transition duration-200") Apartament
+                                                h3(class="text-3xl mb-6 tracking-tight leading-none") Althhorpe Street Leamigton Spa
+                                                span(class="block text-coolGray-600") Girona, Spain
+                                    div(class="w-full lg:w-1/3 px-3")
+                                        a(class="group block", href="#")
+                                            div(class="relative h-96 md:h-112 mb-8 rounded-5xl overflow-hidden")
+                                                div(class="absolute left-0 top-0 h-full w-full group-hover:bg-opacity-10 group-hover:bg-black transition duration-200")
+                                                img(class="block w-full h-full object-cover", src="asitrastudio-assets/projects/photo-view2.png", alt="")
+                                            div(class="max-w-xs")
+                                                span(class="inline-block mb-3 py-2 px-3 text-sm leading-none border-1.5 border-black group-hover:bg-black group-hover:text-white rounded-full transition duration-200") Apartament
+                                                h3(class="text-3xl mb-6") Althhorpe Street Leamigton Spa
+                                                span(class="block text-coolGray-600") Girona, Spain
+                            div(class="text-center")
+                                a(class="group inline-flex items-center leading-none font-medium pb-2 border-b-2 border-black", href="/cases")
+                                    span(class="mr-4") Bekijk alle cases
+                                    |           
+                                    span(class="group-hover:rotate-45 transform transition duration-100")
+                                        svg(width="11", height="11", viewbox="0 0 11 11", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                            path(d="M9.5 1.5L1.5 9.5", stroke="black", stroke-width="1.3", stroke-miterlimit="10", stroke-linecap="round", stroke-linejoin="round")
+                                            path(d="M9.5 8.83571V1.5H2.16429", stroke="black", stroke-width="1.3", stroke-miterlimit="10", stroke-linecap="round", stroke-linejoin="round")
+            section(class="py-12 lg:py-24 bg-orange-50")
+                div(class="container mx-auto px-4")
+                    div(class="flex flex-wrap -mx-4")
+                        div(class="w-full sm:w-1/2 md:w-1/4 px-4 mb-10 md:mb-0")
+                            div(class="text-center")
+                                h5(class="text-2xl xs:text-3xl lg:text-4xl xl:text-5xl mb-4") 8
+                                span(class="text-base lg:text-lg text-gray-700") Jaar ervaring
+                        div(class="w-full sm:w-1/2 md:w-1/4 px-4 mb-10 md:mb-0")
+                            div(class="text-center")
+                                h5(class="text-2xl xs:text-3xl lg:text-4xl xl:text-5xl mb-4") 150+
+                                span(class="text-base lg:text-lg text-gray-700") Projecten afgerond
+                        div(class="w-full sm:w-1/2 md:w-1/4 px-4 mb-10 sm:mb-0")
+                            div(class="text-center")
+                                h5(class="text-2xl xs:text-3xl lg:text-4xl xl:text-5xl mb-4") Snelle Support
+                                span(class="text-base lg:text-lg text-gray-700") Renewable Energy Generated
+                        div(class="w-full sm:w-1/2 md:w-1/4 px-4")
+                            div(class="text-center")
+                                h5(class="text-2xl xs:text-3xl lg:text-4xl xl:text-5xl mb-4") 100% ROI
+                                span(class="text-base lg:text-lg text-gray-700") Renewable Energy Generated
+            section(class="pt-12 lg:py-24 bg-teal-900 relative overflow-hidden")
+                div(class="hidden lg:flex items-center absolute top-0 right-0 h-full w-2/5 max-w-sm xl:max-w-lg bg-orange-50")
+                    div(class="relative xl:h-full transform -translate-x-1/2 rounded-full overflow-hidden")
+                        img(class="block xl:h-full", src="flow-assets/cta/circle-photo.png", alt="")
+                        img(class="absolute top-0 right-0 h-full transform scale-105", src="flow-assets/cta/lime-half-circle.png", alt="")
+                div(class="container mx-auto px-4 relative")
+                    div(class="max-w-md lg:max-w-none lg:w-2/5 mx-auto lg:mx-0")
+                        h1(class="font-heading text-5xl sm:text-6xl tracking-sm text-white mb-6") Join the green movement
+                        p(class="text-lg text-white opacity-80 mb-10") Our commitment to green energy is paving the way for a cleaner, healthier planet. 
+                        a(href="#", class="inline-flex py-4 px-6 items-center justify-center text-lg font-medium text-teal-900 border border-lime-500 hover:border-white bg-lime-500 hover:bg-white rounded-full transition duration-200") Get in touch
+                div(class="lg:hidden flex items-center mt-20 ml-auto w-1/2 bg-teal-900")
+                    div(class="relative xl:h-full transform -translate-x-1/2 rounded-full overflow-hidden")
+                        img(class="block xl:h-full", src="flow-assets/cta/circle-photo.png", alt="")
+                        img(class="absolute top-0 right-0 h-full transform scale-105", src="flow-assets/cta/lime-half-circle.png", alt="")
+            section(class="py-12 lg:py-24 bg-teal-900 overflow-hidden")
+                div(class="container mx-auto px-4")
+                    div(class="max-w-sm lg:max-w-md mx-auto text-center mb-16")
+                        h4(class="font-heading text-4xl md:text-5xl text-white") Global partners that trusted us
+                    div(class="flex justify-center -mb-2 -mx-2")
+                        div(class="flex-shrink-0 w-2/5 sm:w-1/2 px-2 mb-2")
+                            div(class="flex h-20 px-6 lg:px-12 items-center justify-center bg-white bg-opacity-25 rounded-lg")
+                                img(class="block", src="flow-assets/logos/brands/logo-light-4.svg", alt="")
+                        div(class="flex-shrink-0 w-2/5 sm:w-1/2 px-2 mb-2")
+                            div(class="flex h-20 px-6 lg:px-12 items-center justify-center bg-white bg-opacity-25 rounded-lg")
+                                img(class="block", src="flow-assets/logos/brands/logo-light-3.svg", alt="")
+                        div(class="flex-shrink-0 w-2/5 sm:w-1/2 px-2 mb-2")
+                            div(class="flex h-20 px-6 lg:px-12 items-center justify-center bg-white bg-opacity-25 rounded-lg")
+                                img(class="block", src="flow-assets/logos/brands/logo-light-2.svg", alt="")
+                        div(class="flex-shrink-0 w-2/5 sm:w-1/2 px-2 mb-2")
+                            div(class="flex h-20 px-6 lg:px-12 items-center justify-center bg-white bg-opacity-25 rounded-lg")
+                                img(class="block", src="flow-assets/logos/brands/logo-light-1.svg", alt="")
+            section(class="py-12 lg:py-24 bg-orange-50")
+                div(class="container mx-auto px-4")
+                    div(class="text-center mb-20")
+                        h1(class="font-heading text-6xl mb-6") FAQ
+                        p(class="text-gray-700") Here you will find the answers to the frequently asked questions.
+                    div(class="max-w-xl mx-auto lg:max-w-none")
+                        div(class="flex flex-wrap -mx-4 mb-24")
+                            div(class="w-full lg:w-1/2 px-4 mb-4 lg:mb-0")
+                                button(x-data="{ accordion: false }", x-on:click.prevent="accordion = !accordion", class="flex w-full py-4 px-8 mb-4 items-start justify-between text-left bg-white shadow-md rounded-2xl")
+                                    div(class="pr-5")
+                                        h5(class="text-lg font-medium") What is green energy?
+                                        div(x-ref="container", :style="accordion ? 'height: ' + $refs.container.scrollHeight + 'px' : ''", class="overflow-hidden h-0 duration-500")
+                                            p(class="text-gray-700 mt-4") We provide a range of green energy solutions, including solar power systems, wind turbines, energy-efficient appliances, and smart home technologies to enhance energy sustainability.
+                                    span(class="flex-shrink-0")
+                                        div(:class="{'hidden': accordion}")
+                                            svg(width="24", height="24", viewbox="0 0 24 24", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                                path(d="M12 5.69995V18.3", stroke="#1D1F1E", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round")
+                                                path(d="M5.69995 12H18.3", stroke="#1D1F1E", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round")
+                                        div(:class="{'hidden': !accordion}", class="hidden")
+                                            svg(width="24", height="24", viewbox="0 0 24 24", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                                path(d="M5.69995 12H18.3", stroke="#1D1F1E", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round")
+                                button(x-data="{ accordion: false }", x-on:click.prevent="accordion = !accordion", class="flex w-full py-4 px-8 mb-4 items-start justify-between text-left bg-white shadow-md rounded-2xl")
+                                    div(class="pr-5")
+                                        h5(class="text-lg font-medium") How does green energy benefit the environment?
+                                        div(x-ref="container", :style="accordion ? 'height: ' + $refs.container.scrollHeight + 'px' : ''", class="overflow-hidden h-0 duration-500")
+                                            p(class="text-gray-700 mt-4") We provide a range of green energy solutions, including solar power systems, wind turbines, energy-efficient appliances, and smart home technologies to enhance energy sustainability.
+                                    span(class="flex-shrink-0")
+                                        div(:class="{'hidden': accordion}")
+                                            svg(width="24", height="24", viewbox="0 0 24 24", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                                path(d="M12 5.69995V18.3", stroke="#1D1F1E", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round")
+                                                path(d="M5.69995 12H18.3", stroke="#1D1F1E", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round")
+                                        div(:class="{'hidden': !accordion}", class="hidden")
+                                            svg(width="24", height="24", viewbox="0 0 24 24", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                                path(d="M5.69995 12H18.3", stroke="#1D1F1E", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round")
+                                button(x-data="{ accordion: false }", x-on:click.prevent="accordion = !accordion", class="flex w-full py-4 px-8 mb-4 items-start justify-between text-left bg-white shadow-md rounded-2xl")
+                                    div(class="pr-5")
+                                        h5(class="text-lg font-medium") What green energy solutions does your company offer?
+                                        div(x-ref="container", :style="accordion ? 'height: ' + $refs.container.scrollHeight + 'px' : ''", class="overflow-hidden h-0 duration-500")
+                                            p(class="text-gray-700 mt-4") We provide a range of green energy solutions, including solar power systems, wind turbines, energy-efficient appliances, and smart home technologies to enhance energy sustainability.
+                                    span(class="flex-shrink-0")
+                                        div(:class="{'hidden': accordion}")
+                                            svg(width="24", height="24", viewbox="0 0 24 24", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                                path(d="M12 5.69995V18.3", stroke="#1D1F1E", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round")
+                                                path(d="M5.69995 12H18.3", stroke="#1D1F1E", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round")
+                                        div(:class="{'hidden': !accordion}", class="hidden")
+                                            svg(width="24", height="24", viewbox="0 0 24 24", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                                path(d="M5.69995 12H18.3", stroke="#1D1F1E", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round")
+                                button(x-data="{ accordion: false }", x-on:click.prevent="accordion = !accordion", class="flex w-full py-4 px-8 mb-4 items-start justify-between text-left bg-white shadow-md rounded-2xl")
+                                    div(class="pr-5")
+                                        h5(class="text-lg font-medium") What support services do you offer after installing green energy solutions?
+                                        div(x-ref="container", :style="accordion ? 'height: ' + $refs.container.scrollHeight + 'px' : ''", class="overflow-hidden h-0 duration-500")
+                                            p(class="text-gray-700 mt-4") We provide a range of green energy solutions, including solar power systems, wind turbines, energy-efficient appliances, and smart home technologies to enhance energy sustainability.
+                                    span(class="flex-shrink-0")
+                                        div(:class="{'hidden': accordion}")
+                                            svg(width="24", height="24", viewbox="0 0 24 24", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                                path(d="M12 5.69995V18.3", stroke="#1D1F1E", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round")
+                                                path(d="M5.69995 12H18.3", stroke="#1D1F1E", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round")
+                                        div(:class="{'hidden': !accordion}", class="hidden")
+                                            svg(width="24", height="24", viewbox="0 0 24 24", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                                path(d="M5.69995 12H18.3", stroke="#1D1F1E", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round")
+                                button(x-data="{ accordion: false }", x-on:click.prevent="accordion = !accordion", class="flex w-full py-4 px-8 items-start justify-between text-left bg-white shadow-md rounded-2xl")
+                                    div(class="pr-5")
+                                        h5(class="text-lg font-medium") How do solar panels work?
+                                        div(x-ref="container", :style="accordion ? 'height: ' + $refs.container.scrollHeight + 'px' : ''", class="overflow-hidden h-0 duration-500")
+                                            p(class="text-gray-700 mt-4") We provide a range of green energy solutions, including solar power systems, wind turbines, energy-efficient appliances, and smart home technologies to enhance energy sustainability.
+                                    span(class="flex-shrink-0")
+                                        div(:class="{'hidden': accordion}")
+                                            svg(width="24", height="24", viewbox="0 0 24 24", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                                path(d="M12 5.69995V18.3", stroke="#1D1F1E", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round")
+                                                path(d="M5.69995 12H18.3", stroke="#1D1F1E", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round")
+                                        div(:class="{'hidden': !accordion}", class="hidden")
+                                            svg(width="24", height="24", viewbox="0 0 24 24", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                                path(d="M5.69995 12H18.3", stroke="#1D1F1E", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round")
+                            div(class="w-full lg:w-1/2 px-4")
+                                button(x-data="{ accordion: false }", x-on:click.prevent="accordion = !accordion", class="flex w-full py-4 px-8 mb-4 items-start justify-between text-left bg-white shadow-md rounded-2xl")
+                                    div(class="pr-5")
+                                        h5(class="text-lg font-medium") What is green energy?
+                                        div(x-ref="container", :style="accordion ? 'height: ' + $refs.container.scrollHeight + 'px' : ''", class="overflow-hidden h-0 duration-500")
+                                            p(class="text-gray-700 mt-4") We provide a range of green energy solutions, including solar power systems, wind turbines, energy-efficient appliances, and smart home technologies to enhance energy sustainability.
+                                    span(class="flex-shrink-0")
+                                        div(:class="{'hidden': accordion}")
+                                            svg(width="24", height="24", viewbox="0 0 24 24", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                                path(d="M12 5.69995V18.3", stroke="#1D1F1E", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round")
+                                                path(d="M5.69995 12H18.3", stroke="#1D1F1E", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round")
+                                        div(:class="{'hidden': !accordion}", class="hidden")
+                                            svg(width="24", height="24", viewbox="0 0 24 24", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                                path(d="M5.69995 12H18.3", stroke="#1D1F1E", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round")
+                                button(x-data="{ accordion: false }", x-on:click.prevent="accordion = !accordion", class="flex w-full py-4 px-8 mb-4 items-start justify-between text-left bg-white shadow-md rounded-2xl")
+                                    div(class="pr-5")
+                                        h5(class="text-lg font-medium") How does green energy benefit the environment?
+                                        div(x-ref="container", :style="accordion ? 'height: ' + $refs.container.scrollHeight + 'px' : ''", class="overflow-hidden h-0 duration-500")
+                                            p(class="text-gray-700 mt-4") We provide a range of green energy solutions, including solar power systems, wind turbines, energy-efficient appliances, and smart home technologies to enhance energy sustainability.
+                                    span(class="flex-shrink-0")
+                                        div(:class="{'hidden': accordion}")
+                                            svg(width="24", height="24", viewbox="0 0 24 24", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                                path(d="M12 5.69995V18.3", stroke="#1D1F1E", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round")
+                                                path(d="M5.69995 12H18.3", stroke="#1D1F1E", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round")
+                                        div(:class="{'hidden': !accordion}", class="hidden")
+                                            svg(width="24", height="24", viewbox="0 0 24 24", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                                path(d="M5.69995 12H18.3", stroke="#1D1F1E", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round")
+                                button(x-data="{ accordion: false }", x-on:click.prevent="accordion = !accordion", class="flex w-full py-4 px-8 mb-4 items-start justify-between text-left bg-white shadow-md rounded-2xl")
+                                    div(class="pr-5")
+                                        h5(class="text-lg font-medium") What green energy solutions does your company offer?
+                                        div(x-ref="container", :style="accordion ? 'height: ' + $refs.container.scrollHeight + 'px' : ''", class="overflow-hidden h-0 duration-500")
+                                            p(class="text-gray-700 mt-4") We provide a range of green energy solutions, including solar power systems, wind turbines, energy-efficient appliances, and smart home technologies to enhance energy sustainability.
+                                    span(class="flex-shrink-0")
+                                        div(:class="{'hidden': accordion}")
+                                            svg(width="24", height="24", viewbox="0 0 24 24", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                                path(d="M12 5.69995V18.3", stroke="#1D1F1E", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round")
+                                                path(d="M5.69995 12H18.3", stroke="#1D1F1E", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round")
+                                        div(:class="{'hidden': !accordion}", class="hidden")
+                                            svg(width="24", height="24", viewbox="0 0 24 24", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                                path(d="M5.69995 12H18.3", stroke="#1D1F1E", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round")
+                                button(x-data="{ accordion: false }", x-on:click.prevent="accordion = !accordion", class="flex w-full py-4 px-8 mb-4 items-start justify-between text-left bg-white shadow-md rounded-2xl")
+                                    div(class="pr-5")
+                                        h5(class="text-lg font-medium") What support services do you offer after installing green energy solutions?
+                                        div(x-ref="container", :style="accordion ? 'height: ' + $refs.container.scrollHeight + 'px' : ''", class="overflow-hidden h-0 duration-500")
+                                            p(class="text-gray-700 mt-4") We provide a range of green energy solutions, including solar power systems, wind turbines, energy-efficient appliances, and smart home technologies to enhance energy sustainability.
+                                    span(class="flex-shrink-0")
+                                        div(:class="{'hidden': accordion}")
+                                            svg(width="24", height="24", viewbox="0 0 24 24", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                                path(d="M12 5.69995V18.3", stroke="#1D1F1E", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round")
+                                                path(d="M5.69995 12H18.3", stroke="#1D1F1E", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round")
+                                        div(:class="{'hidden': !accordion}", class="hidden")
+                                            svg(width="24", height="24", viewbox="0 0 24 24", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                                path(d="M5.69995 12H18.3", stroke="#1D1F1E", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round")
+                                button(x-data="{ accordion: false }", x-on:click.prevent="accordion = !accordion", class="flex w-full py-4 px-8 items-start justify-between text-left bg-white shadow-md rounded-2xl")
+                                    div(class="pr-5")
+                                        h5(class="text-lg font-medium") How do solar panels work?
+                                        div(x-ref="container", :style="accordion ? 'height: ' + $refs.container.scrollHeight + 'px' : ''", class="overflow-hidden h-0 duration-500")
+                                            p(class="text-gray-700 mt-4") We provide a range of green energy solutions, including solar power systems, wind turbines, energy-efficient appliances, and smart home technologies to enhance energy sustainability.
+                                    span(class="flex-shrink-0")
+                                        div(:class="{'hidden': accordion}")
+                                            svg(width="24", height="24", viewbox="0 0 24 24", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                                path(d="M12 5.69995V18.3", stroke="#1D1F1E", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round")
+                                                path(d="M5.69995 12H18.3", stroke="#1D1F1E", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round")
+                                        div(:class="{'hidden': !accordion}", class="hidden")
+                                            svg(width="24", height="24", viewbox="0 0 24 24", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                                path(d="M5.69995 12H18.3", stroke="#1D1F1E", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round")
+                        div(class="max-w-xl mx-auto text-center")
+                            span(class="inline-block mb-8")
+                                svg(width="48", height="48", viewbox="0 0 48 48", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                    path(d="M0 8C0 3.58172 3.58172 0 8 0H40C44.4183 0 48 3.58172 48 8V40C48 44.4183 44.4183 48 40 48H8C3.58172 48 0 44.4183 0 40V8Z", fill="#BEF264")
+                                    path(d="M13.676 15.5617C11.7951 17.8602 10.6666 20.7983 10.6666 24C10.6666 27.2017 11.7951 30.1398 13.6761 32.4383L18.9201 27.1943C18.3372 26.2694 18 25.174 18 24C18 22.8259 18.3372 21.7306 18.92 20.8057L13.676 15.5617Z", fill="#022C22")
+                                    path(d="M15.5616 13.6761L20.8056 18.9201C21.7306 18.3372 22.8259 18 24 18C25.174 18 26.2694 18.3372 27.1943 18.9201L32.4383 13.6761C30.1398 11.7951 27.2017 10.6666 24 10.6666C20.7982 10.6666 17.8601 11.7951 15.5616 13.6761Z", fill="#022C22")
+                                    path(d="M34.3239 15.5617L29.0799 20.8057C29.6628 21.7307 30 22.8259 30 24C30 25.174 29.6627 26.2693 29.0799 27.1943L34.3238 32.4383C36.2048 30.1398 37.3333 27.2017 37.3333 24C37.3333 20.7983 36.2048 17.8602 34.3239 15.5617Z", fill="#022C22")
+                                    path(d="M32.4382 34.3239L27.1942 29.0799C26.2693 29.6628 25.174 30 24 30C22.8259 30 21.7307 29.6628 20.8057 29.0799L15.5617 34.3239C17.8602 36.2048 20.7983 37.3333 24 37.3333C27.2016 37.3333 30.1397 36.2048 32.4382 34.3239Z", fill="#022C22")
+                            h5(class="text-xl font-medium mb-4") Still have questions?
+                            p(class="text-gray-700")
+                                span For assistance, please visit our
+                                |                               
+                                a(href="#", class="inline-block text-black font-medium underline") Contact Us
+                                |                               
+                                span page or call our customer support hotline at
+                                |                               
+                                span(class="text-black font-medium") (671) 555-0110
+                                |                               
+                                span . Our dedicated team is ready to help you on your journey to a greener, more sustainable future.
+            section(class="relative py-12 lg:py-24 bg-teal-900 overflow-hidden")
+                img(class="absolute bottom-0 left-0", src="flow-assets/footer/waves-lines-left-bottom.png", alt="")
+                div(class="container px-4 mx-auto relative")
+                    div(class="max-w-xl lg:max-w-none mx-auto")
+                        div(class="flex flex-wrap mb-12 lg:mb-24 -mx-4")
+                            div(class="w-full lg:w-1/2 px-4 mb-16 lg:mb-0")
+                                a(class="inline-block mb-18", href="#")
+                                    img(src="images/Logo-wit-at-4x.png", alt="", class="h-18")
+                                div(class="max-w-md")
+                                    h5(class="text-xl font-medium text-white mb-4") Your Source for Green Energy Updates
+                                    p(class="text-sm text-white opacity-80 leading-normal mb-10") Stay in the loop with our Green Horizon newsletter, where we deliver bite-sized insights into the latest green energy solutions.
+                                    div(class="flex flex-col sm:flex-row lg:max-w-md xl:max-w-none")
+                                        input(type="email", class="h-12 w-full px-4 py-1 placeholder-gray-700 outline-none ring-offset-0 focus:ring-2 focus:ring-lime-500 shadow rounded-full", placeholder="Your e-mail...")
+                                        a(href="#", class="flex-shrink-0 h-12 inline-flex mt-3 sm:mt-0 sm:ml-2 py-1 px-5 items-center justify-center font-medium text-teal-900 border border-lime-500 hover:border-white bg-lime-500 hover:bg-white rounded-full transition duration-200") Get in touch
+                            div(class="w-full lg:w-1/2 px-4")
+                                div(class="flex flex-wrap -mx-4")
+                                    div(class="w-1/2 xs:w-1/3 px-4 mb-8 xs:mb-0")
+                                        h3(class="mb-6 text-white font-bold") Platform
+                                        ul
+                                            li(class="mb-4")
+                                                a(class="inline-block text-white opacity-80 hover:opacity-100 font-medium", href="#") Solutions
+                                            li(class="mb-4")
+                                                a(class="inline-block text-white opacity-80 hover:opacity-100 font-medium", href="#") How it works
+                                            li
+                                                a(class="inline-block text-white opacity-80 hover:opacity-100 font-medium", href="#") Pricing
+                                    div(class="w-1/2 xs:w-1/3 px-4 mb-8 xs:mb-0")
+                                        h3(class="mb-6 text-white font-bold") Resources
+                                        ul
+                                            li(class="mb-4")
+                                                a(class="inline-block text-white opacity-80 hover:opacity-100 font-medium", href="#") Blog
+                                            li(class="mb-4")
+                                                a(class="inline-block text-white opacity-80 hover:opacity-100 font-medium", href="#") Help Center
+                                            li
+                                                a(class="inline-block text-white opacity-80 hover:opacity-100 font-medium", href="#") Support
+                                    div(class="w-full xs:w-1/3 px-4")
+                                        h3(class="mb-6 text-white font-bold") Company
+                                        ul
+                                            li(class="mb-4")
+                                                a(class="inline-block text-white opacity-80 hover:opacity-100 font-medium", href="#") About
+                                            li(class="mb-4")
+                                                a(class="inline-block text-white opacity-80 hover:opacity-100 font-medium", href="#") Our Mission
+                                            li(class="mb-4")
+                                                a(class="inline-block text-white opacity-80 hover:opacity-100 font-medium", href="#") Careers
+                                            li
+                                                a(class="inline-block text-white opacity-80 hover:opacity-100 font-medium", href="#") Contact
+                        div
+                            p(class="text-sm text-gray-500") © 2024 Multichoiceagency. All rechten voorbehouden.
